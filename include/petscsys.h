@@ -2344,4 +2344,8 @@ PETSC_EXTERN PetscErrorCode PetscBLASGetNumThreads(PetscInt *);
    This is needed to avoid errors with undefined-behavior sanitizers such as
    UBSan, assuming PETSc has been configured with `-fsanitize=undefined` as part of the compiler flags
 M*/
-#define PetscSafePointerPlusOffset(ptr, offset) ((ptr) ? (ptr) + (offset) : NULL)
+#if defined(PETSC_VERIFIED)
+    #define PetscSafePointerPlusOffset(ptr, offset) ((ptr) + (offset))
+#else
+    #define PetscSafePointerPlusOffset(ptr, offset) ((ptr) ? (ptr) + (offset) : NULL)
+#endif

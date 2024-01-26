@@ -284,23 +284,10 @@ static PetscErrorCode PetscOptionsGetViewers_Single(MPI_Comm comm, const char va
   PetscFunctionReturn(PETSC_SUCCESS);
 }
 
-static PetscErrorCode PetscOptionsGetViewers_Internal(MPI_Comm comm, PetscOptions options, const char pre[], const char name[], PetscInt *n_max_p, PetscViewer viewer[], PetscViewerFormat format[], PetscBool *set, const char func_name[], PetscBool allow_multiple)
+PetscErrorCode PetscOptionsGetViewer_Private(MPI_Comm comm, PetscOptions options, const char pre[], const char name[], PetscViewer *viewer, PetscViewerFormat *format, PetscBool *set, const char func_name[], PetscBool allow_multiple)
 {
   const char *value;
   PetscBool   flag, hashelp;
-  PetscInt    n_max;
-
-  PetscFunctionBegin;
-  PetscAssertPointer(name, 4);
-  PetscAssertPointer(n_max_p, 5);
-  n_max = *n_max_p;
-  PetscCheck(n_max >= 0, comm, PETSC_ERR_ARG_OUTOFRANGE, "Invalid size %" PetscInt_FMT " of passed arrays", *n_max_p);
-  *n_max_p = 0;
-
-  if (set) *set = PETSC_FALSE;
-  PetscCall(PetscOptionsGetViewerOff(&flag));
-  if (flag) PetscFunctionReturn(PETSC_SUCCESS);
-
   PetscCall(PetscOptionsHasHelp(NULL, &hashelp));
   if (hashelp) {
     PetscBool found;
@@ -361,6 +348,26 @@ static PetscErrorCode PetscOptionsGetViewers_Internal(MPI_Comm comm, PetscOption
     }
   }
   PetscFunctionReturn(PETSC_SUCCESS);
+}
+
+static PetscErrorCode PetscOptionsGetViewers_Internal(MPI_Comm comm, PetscOptions options, const char pre[], const char name[], PetscInt *n_max_p, PetscViewer viewer[], PetscViewerFormat format[], PetscBool *set, const char func_name[], PetscBool allow_multiple)
+{
+  const char *value;
+  PetscBool   flag, hashelp;
+  PetscInt    n_max;
+
+  PetscFunctionBegin;
+  PetscAssertPointer(name, 4);
+  PetscAssertPointer(n_max_p, 5);
+  n_max = *n_max_p;
+  PetscCheck(n_max >= 0, comm, PETSC_ERR_ARG_OUTOFRANGE, "Invalid size %" PetscInt_FMT " of passed arrays", *n_max_p);
+  *n_max_p = 0;
+
+  if (set) *set = PETSC_FALSE;
+  PetscCall(PetscOptionsGetViewerOff(&flag));
+  if (flag) PetscFunctionReturn(PETSC_SUCCESS);
+  return PetscOptionsGetViewer_Private(comm, options, pre, name, viewer, format, set, func_name, allow_multiple);
+  
 }
 
 /*@C

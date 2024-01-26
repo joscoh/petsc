@@ -12,7 +12,7 @@
   #include <petscfeceed.h>
 #endif
 
-#if !defined(PETSC_HAVE_WINDOWS_COMPILERS)
+#if !defined(PETSC_HAVE_WINDOWS_COMPILERS) && !defined(PETSC_VERIFIED)
   #include <petsc/private/valgrind/memcheck.h>
 #endif
 

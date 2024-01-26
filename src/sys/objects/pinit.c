@@ -7,7 +7,7 @@
 #include <petscviewer.h>
 #include <petsc/private/garbagecollector.h>
 
-#if !defined(PETSC_HAVE_WINDOWS_COMPILERS)
+#if !defined(PETSC_HAVE_WINDOWS_COMPILERS) && !defined(PETSC_VERIFIED)
   #include <petsc/private/valgrind/valgrind.h>
 #endif
 
@@ -238,7 +238,7 @@ PetscErrorCode PetscMaxSum(MPI_Comm comm, const PetscInt sizes[], PetscInt *max,
 }
 
 #if defined(PETSC_HAVE_REAL___FLOAT128) || defined(PETSC_HAVE_REAL___FP16)
-  #if defined(PETSC_HAVE_REAL___FLOAT128)
+  #if defined(PETSC_HAVE_REAL___FLOAT128) && !defined(PETSC_VERIFIED)
     #include <quadmath.h>
   #endif
 MPI_Op MPIU_SUM___FP16___FLOAT128 = 0;
