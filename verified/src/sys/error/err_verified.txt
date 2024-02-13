@@ -1,0 +1,3 @@
+PetscPushErrorHandler
+PetscError
+PetscMPIErrorString

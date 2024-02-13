@@ -1,0 +1,3 @@
+KSPGuessRegister
+KSPGuessRegisterAll
+KSPGuessDestroy

@@ -1,0 +1,2 @@
+PetscCommDuplicate
+PetscCommDestroy

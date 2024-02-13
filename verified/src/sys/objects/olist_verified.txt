@@ -1,0 +1,4 @@
+PetscObjectListAdd
+PetscObjectListDestroy
+PetscObjectListDuplicate
+PetscObjectListReverseFind

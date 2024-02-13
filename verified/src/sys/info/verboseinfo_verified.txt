@@ -1,0 +1,7 @@
+PetscInfoAllow
+PetscInfoGetClass
+PetscInfoGetInfo
+PetscInfoProcessClass
+PetscInfoDestroy
+PetscInfoSetClassActivation_Private
+PetscInfoDeactivateClass

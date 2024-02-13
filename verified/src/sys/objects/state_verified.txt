@@ -1,0 +1,5 @@
+PetscObjectStateGet
+PetscObjectStateSet
+PetscObjectComposedDataIncreaseReal
+PetscObjectComposedDataRegister
+PetscObjectComposedDataIncrease_

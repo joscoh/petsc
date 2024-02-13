@@ -1,0 +1,10 @@
+KSPSetSupportedNorm
+KSPNormSupportTableReset_Private
+KSPSetUpNorms_Private
+KSPGetNormType
+KSPSetOperators
+KSPCreate
+KSPSetType
+KSPRegister
+KSPMonitorMakeKey_Internal
+KSPMonitorRegister

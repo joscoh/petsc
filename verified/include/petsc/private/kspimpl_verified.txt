@@ -1,0 +1,4 @@
+KSPLogResidualHistory
+KSP_RemoveNullSpace
+KSP_MatMult
+KSP_PCApply

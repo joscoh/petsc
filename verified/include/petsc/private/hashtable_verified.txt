@@ -1,0 +1,4 @@
+PetscHash_UInt32_v1
+PetscHash_UInt32
+PetscHashInt
+PetscHashCombine

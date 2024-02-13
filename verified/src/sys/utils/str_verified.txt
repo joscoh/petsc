@@ -1,0 +1,7 @@
+PetscStrNArrayDestroy
+PetscStrcasecmp
+PetscStrendswithwhich
+PetscTokenFind
+PetscTokenCreate
+PetscTokenDestroy
+PetscEListFind

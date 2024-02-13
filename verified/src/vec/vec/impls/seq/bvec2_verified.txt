@@ -1,0 +1,10 @@
+VecPointwiseMult_Seq
+VecGetSize_Seq
+VecCopy_Seq
+VecNorm_Seq
+VecResetPreallocationCOO_Seq
+VecDestroy_Seq
+VecDuplicate_Seq
+VecCreate_Seq_Private
+VecDuplicateVecs_Seq_GEMV
+VecCreateSeqWithLayoutAndArray_Private

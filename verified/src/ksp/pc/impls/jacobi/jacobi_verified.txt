@@ -1,0 +1,8 @@
+PCSetUp_Jacobi
+PCSetUp_Jacobi_Symmetric
+PCSetUp_Jacobi_NonSymmetric
+PCApply_Jacobi
+PCApplySymmetricLeftOrRight_Jacobi
+PCReset_Jacobi
+PCDestroy_Jacobi
+PCCreate_Jacobi

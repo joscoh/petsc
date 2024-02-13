@@ -1,0 +1,5 @@
+PetscSegBufferAlloc_Private
+PetscSegBufferCreate
+PetscSegBufferGet
+PetscSegBufferDestroy
+PetscSegBufferUnuse

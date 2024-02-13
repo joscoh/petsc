@@ -1,0 +1,14 @@
+PetscStrlen
+PetscStrallocpy
+PetscStrcmpNoError
+PetscStrcmp
+PetscStrncpy
+PetscStrlcat
+PetscStrncmp
+PetscStrstr
+PetscStrchr
+PetscStrendswith
+PetscStrbeginswith
+PetscMemmove
+PetscMemcpy
+PetscMemzero

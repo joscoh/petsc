@@ -1,0 +1,5 @@
+ISLocalToGlobalMappingSetBlockSize
+ISLocalToGlobalMappingGetBlockSize
+ISLocalToGlobalMappingGetIndices
+ISLocalToGlobalMappingRestoreIndices
+ISLocalToGlobalMappingDestroy

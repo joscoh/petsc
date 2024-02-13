@@ -1,0 +1,17 @@
+VecPointwiseApply_Private
+VecPointwiseMult
+VecDuplicate
+VecDestroy
+VecDuplicateVecs
+VecDestroyVecs
+VecGetSize
+VecGetLocalSize
+VecDuplicateVecs_Default
+VecDestroyVecs_Default
+VecSetSizes
+VecSetBlockSize
+VecCopy
+VecSetInf
+VecReciprocal
+VecCopyAsync_Private
+VecPointwiseMultAsync_Private

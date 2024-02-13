@@ -1,0 +1,11 @@
+PetscCitationsInitialize
+PetscPreMPIInit_Private
+PetscSetProgramName
+PetscGetProgramName
+PetscInitialize_Common
+PetscInitialize
+PetscFreeMPIResources
+PetscFinalize
+Petsc_InnerComm_Attr_Delete_Fn
+Petsc_OuterComm_Attr_Delete_Fn
+Petsc_Counter_Attr_Delete_Fn

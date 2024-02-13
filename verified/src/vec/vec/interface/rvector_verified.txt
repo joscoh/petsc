@@ -1,0 +1,16 @@
+VecDot
+VecNorm
+VecNormAvailable
+VecScale
+VecSet
+VecAXPY
+VecAYPX
+VecGetArray
+VecRestoreArray
+VecGetArrayRead
+VecRestoreArrayRead
+VecGetArrayWrite
+VecRestoreArrayWrite
+VecSetAsync_Private
+VecAXPYAsync_Private
+VecAYPXAsync_Private

@@ -1,0 +1,3 @@
+VecSetType
+VecRegister
+VecGetType

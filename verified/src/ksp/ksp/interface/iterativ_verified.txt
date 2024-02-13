@@ -1,0 +1,8 @@
+KSPGetIterationNumber
+KSPConvergedSkip
+KSPConvergedDefaultCreate
+KSPConvergedDefault
+KSPConvergedDefaultDestroy
+KSPCreateVecs
+KSPSetWorkVecs
+KSPDestroyDefault

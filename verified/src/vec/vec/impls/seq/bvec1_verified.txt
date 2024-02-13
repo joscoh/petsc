@@ -1,0 +1,4 @@
+VecXDot_Seq_Private
+VecDot_Seq
+VecScale_Seq
+VecAXPY_Seq

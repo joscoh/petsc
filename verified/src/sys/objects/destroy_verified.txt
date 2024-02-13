@@ -1,0 +1,10 @@
+PetscComposedQuantitiesDestroy
+PetscObjectDestroy
+PetscObjectViewFromOptions
+PetscObjectTypeCompare
+PetscObjectRegisterDestroyAll
+PetscRegisterFinalize
+PetscRegisterFinalizeAll
+RegisterFinalizer
+DestroyComposedData
+PetscRunRegisteredFinalizers

@@ -1,0 +1,13 @@
+PetscOptionsHelpPrintedDestroy
+PetscOptionsHelpPrintedCreate
+PetscOptionsHelpPrintedCheck
+PetscOptionsPushGetViewerOff
+PetscOptionsGetViewerOff
+PetscOptionsGetViewer
+PetscOptionsGetViewers_Internal
+kh_init_HTPrinted
+kh_put_HTPrinted
+kh_resize_HTPrinted
+kh_destroy_HTPrinted
+__ac_X31_hash_string
+PetscOptionsRestoreViewer

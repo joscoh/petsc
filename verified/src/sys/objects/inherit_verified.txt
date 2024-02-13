@@ -1,0 +1,13 @@
+PetscObjectNewId_Internal
+PetscHeaderCreate_Private
+PetscHeaderDestroy_Private
+PetscObjectDestroyOptionsHandlers
+PetscObjectReference
+PetscObjectGetReference
+PetscObjectDereference
+PetscObjectCompose
+PetscObjectComposeFunction_Private
+PetscObjectComposeFunction_Petsc
+PetscObjectCompose_Petsc
+PetscHeaderCreate_Function
+PetscHeaderDestroy_Function

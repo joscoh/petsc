@@ -1,0 +1,3 @@
+MatSeqAIJ_Inode_ResetOps
+MatSeqAIJCheckInode
+MatSeqAIJInvalidateDiagonal_Inode
