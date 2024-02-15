@@ -29,6 +29,8 @@ def remove_whitepace(file_in, file_out):
 	with open(file_out, 'w') as f:
 		f.writelines(lines)
 
+changed = False
+
 
 for root, dirs, files in os.walk(dir1):
 	for filename in files:
@@ -59,6 +61,10 @@ for root, dirs, files in os.walk(dir1):
 		#if difference, exit(1)
 		if not c:
 			print("Difference in file" + filename)
-			sys.exit(1)
-print("Success: verified subset is identical")
-sys.exit(0)
+			changed = True
+
+if changed:
+	sys.exit(1)
+else:
+	print("Success: verified subset is identical")
+	sys.exit(0)
