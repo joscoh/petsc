@@ -1,4 +1,4 @@
-Verifiable Subset of PETSc
+# Verifiable Subset of PETSc
 
 To generate the stubified files (and compile them with CompCert), run `make compile`.
 
@@ -11,7 +11,7 @@ To run the resulting binary `jacobi.o` (with the supported options), run `make r
 Running `diff.sh` (from the main PETSc directory) generates stub files for the current working directory and the previous commit, calls `compare.py` to compare these, and returns a non-zero error code (with an error message) if the verifiable subset has changed.
 
 
-Individual components:
+## Individual components:
 
 `stubify`: binary for Stubify tool, found at https://github.com/joscoh/stubify
 
